@@ -1,0 +1,39 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "name": "cn.mzmzup",
+      "type": "cn.mzmzup.entity.ApiLockProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "defaultValue": 120,
+      "name": "cn.mzmzup.count-threshold-value",
+      "description": "在 {@see LOCK_TIME} 时间内请求的阈值",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "name": "cn.mzmzup.l-o-c-k-i-p-k-e-y-i-p-",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "name": "cn.mzmzup.l-o-c-k-i-p-r-e-q-k-e-y-c-o-d-e-",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "name": "cn.mzmzup.l-o-c-k-i-p-r-e-q-k-e-y-c-o-u-n-t-",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.mzmzup.entity.ApiLockProperties",
+      "name": "cn.mzmzup.l-o-c-k-t-i-m-e",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

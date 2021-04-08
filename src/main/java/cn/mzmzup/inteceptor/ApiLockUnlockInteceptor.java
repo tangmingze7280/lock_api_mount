@@ -11,7 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ * //TODO
+ * @author tmz
+ * @description
+ * @date 9:26 2021/4/8
+ */
 public class ApiLockUnlockInteceptor implements HandlerInterceptor {
 	private TokenAwt tokenAwt;
 	public ApiLockUnlockInteceptor(){
@@ -29,6 +34,14 @@ public class ApiLockUnlockInteceptor implements HandlerInterceptor {
 		}
 		return true;
 	}
+	/**
+	 * 计数校验
+	 * @author tmz
+	 * @description
+	 * @date 9:26 2021/4/8
+	 * @param request
+	 * @return boolean
+	 */
 	protected boolean checklockreq(HttpServletRequest request){
 		return tokenAwt.addReqCount(tokenAwt.getRemortIP(request));
 	}

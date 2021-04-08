@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.mzmzup.config.ApiLockAutoConfiguration\
+  ,cn.mzmzup.awt.TokenAwt
