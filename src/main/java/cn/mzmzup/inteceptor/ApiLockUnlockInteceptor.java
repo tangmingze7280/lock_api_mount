@@ -43,6 +43,10 @@ public class ApiLockUnlockInteceptor implements HandlerInterceptor {
 	 * @return boolean
 	 */
 	protected boolean checklockreq(HttpServletRequest request){
-		return tokenAwt.addReqCount(tokenAwt.getRemortIP(request));
+		try {
+			return tokenAwt.addReqCount(tokenAwt.getRemortIP(request));
+		}catch (Exception e){
+		}
+		return true;
 	}
 }
