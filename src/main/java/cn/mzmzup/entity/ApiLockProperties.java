@@ -24,6 +24,10 @@ public class ApiLockProperties {
      * 在 {@see LOCK_TIME} 时间内请求的阈值
      */
     private int count_threshold_value=120;
+    /**
+     *  RedisTemplate<String,Object> 对象名字
+     */
+    private String redisTemplateName = "redisTemplate";
 
     public String getLOCK_IP_KEY_IP_() {
         return LOCK_IP_KEY_IP_;
@@ -63,5 +67,13 @@ public class ApiLockProperties {
 
     public void setCount_threshold_value(int count_threshold_value) {
         this.count_threshold_value = count_threshold_value;
+    }
+
+    public String getRedisTemplateName() {
+        return redisTemplateName;
+    }
+
+    public void setRedisTemplateName(String redisTemplateName) {
+        this.redisTemplateName = redisTemplateName;
     }
 }

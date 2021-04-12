@@ -10,7 +10,6 @@
   "properties": [
     {
       "sourceType": "cn.mzmzup.entity.ApiLockProperties",
-      "defaultValue": 120,
       "name": "cn.mzmzup.count-threshold-value",
       "description": "在 {@see LOCK_TIME} 时间内请求的阈值",
       "type": "java.lang.Integer"
